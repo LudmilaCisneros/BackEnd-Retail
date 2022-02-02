@@ -65,7 +65,7 @@ public class OrdenCriteria {
         cq.select(root);
         TypedQuery<Orden> query = this.entityManager.createQuery(cq);
         entityManager.close();*/
-
+        entityManager.persist(orden);
     }
 
     @Transactional
